@@ -4,7 +4,7 @@ info:
   version: 0.2.0
   description: Control an OpenMontage installation from a Custom GPT with native pipelines, approvals, async jobs, media inputs and signed render delivery.
 servers:
-  - url: https://YOUR-OPENMONTAGE-DOMAIN.example.com
+  - url: https://openmontage-production-6f0b.up.railway.app
 components:
   securitySchemes:
     apiKey:
