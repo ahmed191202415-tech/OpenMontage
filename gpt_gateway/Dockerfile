@@ -19,4 +19,4 @@ RUN cd /app/remotion-composer && npm install
 COPY . /app
 
 EXPOSE 8000
-CMD ["uvicorn", "gpt_gateway.app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn gpt_gateway.app:app --host 0.0.0.0 --port ${PORT:-8000}"]
