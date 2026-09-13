@@ -14,8 +14,10 @@ from gpt_gateway.main import (
     require_api_key,
 )
 from gpt_gateway.v2 import router as gateway_v2_router
+from gpt_gateway.artifact_api import router as artifact_api_router
 
 app.include_router(gateway_v2_router)
+app.include_router(artifact_api_router)
 
 
 _STAGE_INSTRUCTIONS_PATH = "/api/v1/pipelines/{pipeline_name}/stages/{stage_name}/instructions"
